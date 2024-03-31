@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+export default function App(){ 
+  return <div className="app">
+    <Logo/>
+    <Form />
+    <PackingList />
+    <Stats />
+  </div>
+}
 
-function App() {
+function Logo(){
+  return <h1>🏝️ far away 💼 </h1>
+}
+
+function Form(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className="add-form"> <h3> what do u need for ur trip 😍</h3> </div>);
+}
+
+function PackingList() {
+  return <div className="list"> LIST </div>
+}
+
+function Stats () {
+  return (
+  <footer className="stats"> <em>you have X items on your list and you already packed X </em></footer>
   );
 }
 
-export default App;
